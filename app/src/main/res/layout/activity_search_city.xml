@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/main_out_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@mipmap/bg">
+
+    <ImageView
+        android:id="@+id/search_iv_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/icon_search" />
+
+    <ImageView
+        android:id="@+id/search_iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/icon_back" />
+
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="319dp"
+        android:layout_height="38dp"
+        android:layout_toEndOf="@id/search_iv_back"
+        android:background="@drawable/searchbg"
+        android:hint=" 搜索国内城市:"
+        android:padding="2dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_et"
+        android:layout_alignStart="@+id/search_et"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/search_iv_submit"
+        android:background="#B5FFFFFF"
+        android:rotation="0"
+        android:rotationY="0"
+        android:scrollbars="horizontal" />
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recy"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginTop="3dp"/>-->
+    <TextView
+        android:id="@+id/search_tv"
+        android:layout_below="@id/search_et"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="热门城市"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/search_gv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_tv"
+
+        android:horizontalSpacing="0dp"
+        android:numColumns="5"
+        android:verticalSpacing="0dp"></GridView>
+
+
+</RelativeLayout>
