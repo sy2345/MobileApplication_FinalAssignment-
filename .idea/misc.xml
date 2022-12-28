@@ -12,12 +12,12 @@
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/drawable/button_tijiao.xml" value="0.1295" />
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/drawable/welcomimg_bg.xml" value="0.122" />
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_city_manager.xml" value="0.1" />
-        <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_covid.xml" value="0.1" />
+        <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_covid.xml" value="0.25" />
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_delete_city.xml" value="0.1" />
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_main.xml" value="0.14345991561181434" />
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_more.xml" value="0.1" />
-        <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_search_city.xml" value="0.25" />
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_words.xml" value="0.22" />
@@ -25,7 +25,7 @@
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/activity_works2.xml" value="0.19427083333333334" />
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/fragment_city_weather.xml" value="0.1" />
         <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/item_city_manager.xml" value="0.10552536231884058" />
-        <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/item_covid.xml" value="0.15307971014492755" />
+        <entry key="..\:/Android Studio/workplace/mini_weather-master1/mini_weather-master/app/src/main/res/layout/item_covid.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/Desktop/weather_forecast_app-master/Application-master/app/src/main/res/drawable-hdpi/bg_item_text.xml" value="0.1835" />
         <entry key="..\:/Users/Administrator/Desktop/weather_forecast_app-master/Application-master/app/src/main/res/drawable/bg_widget.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/Desktop/weather_forecast_app-master/Application-master/app/src/main/res/drawable/button_shape.xml" value="0.1" />

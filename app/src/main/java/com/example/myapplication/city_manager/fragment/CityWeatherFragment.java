@@ -194,7 +194,7 @@ public class CityWeatherFragment extends BaseFragment implements View.OnClickLis
 
     }
     private void parseShowData(String result) throws ParseException {
-//        使用gson解析数据
+    //使用gson解析数据
         WeatherBean weatherBean = new Gson().fromJson(result, WeatherBean.class);
         WeatherBean.DataBean resultsBean = weatherBean.getData();
         index = resultsBean.getIndex();
@@ -213,10 +213,10 @@ public class CityWeatherFragment extends BaseFragment implements View.OnClickLis
             dayIv.setImageBitmap(getImageFromAssetsFile("day_" + weather_code + ".png"));
         }
         //dayIv
-//        设置TextView
+        //设置TextView
         cityTv.setText(city);
         tipTv.setText(resultsBean.getTips().getObserve().get_$0());
-//        获取今日天气情况
+        //获取今日天气情况
         WeatherBean.DataBean.ObserveBean todayDataBean = resultsBean.getObserve();
         String time = changeTime(todayDataBean.getUpdate_time());
 
@@ -225,9 +225,9 @@ public class CityWeatherFragment extends BaseFragment implements View.OnClickLis
         windTv.setText("湿度 "+todayDataBean.getHumidity()+"%");
         tempRangeTv.setText("气压  "+todayDataBean.getPressure()+"hPa");
         conditionTv.setText(todayDataBean.getWeather_short());
-//        获取实时天气温度情况，需要处理字符串
+        //获取实时天气温度情况，需要处理字符串
         tempTv.setText(todayDataBean.getDegree()+"°C");
-//        获取未来三天的天气情况，加载到layout当中
+        //获取未来三天的天气情况，加载到layout当中
         WeatherBean.DataBean.Forecast24hBean futureList = resultsBean.getForecast_24h();
 
         View itemView = LayoutInflater.from(getActivity()).inflate(R.layout.item_main_center, null);
@@ -237,7 +237,7 @@ public class CityWeatherFragment extends BaseFragment implements View.OnClickLis
         TextView iconTv = itemView.findViewById(R.id.item_center_tv_con);
         TextView itemprangeTv = itemView.findViewById(R.id.item_center_tv_temp);
         TextView wind = itemView.findViewById(R.id.item_center_tv_winddirection);
-//          获取对应的位置的天气情况
+        //获取对应的位置的天气情况
         idateTv.setText(futureList.get_$2().getTime()+"   明天");
         iconTv.setText(futureList.get_$2().getDay_weather());
         wind.setText(futureList.get_$2().getDay_wind_direction());

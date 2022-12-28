@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingBottom="40dp"
-        android:text="天气早知道"
+        android:text="天气御报"
         android:textColor="@color/design_default_color_secondary_variant"
         android:textSize="48sp"
         android:textStyle="bold" />

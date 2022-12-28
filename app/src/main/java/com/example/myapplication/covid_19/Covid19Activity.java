@@ -35,14 +35,14 @@ public class Covid19Activity extends BaseActivity{
     //默认按钮处省和市都传入进来
     private ProgressDialog progressDialog;
     TextView covid_tv_city;
-    TextView bentuquezhen;
-    TextView bentuwuzhengzhuang;
-    TextView jingwaishuru;
-    TextView siwangbingli;
-    TextView gaofengxiandiqu;
-    TextView zhongfengxiandiqu;
-    TextView xianyouquezhen;
-    TextView leijiquezhen;
+//    TextView bentuquezhen;
+//    TextView bentuwuzhengzhuang;
+//    TextView jingwaishuru;
+//    TextView siwangbingli;
+//    TextView gaofengxiandiqu;
+//    TextView zhongfengxiandiqu;
+//    TextView xianyouquezhen;
+//    TextView leijiquezhen;
     ListView subao;
     String city;
     String province;
@@ -121,14 +121,14 @@ public class Covid19Activity extends BaseActivity{
     /**
      * 显示进度对话框
      */
-    private void showProgressDialog() {
-        if (progressDialog == null) {
-            progressDialog = new ProgressDialog(this);
-            progressDialog.setMessage("正在加载...");
-            progressDialog.setCanceledOnTouchOutside(false);
-        }
-        progressDialog.show();
-    }
+//    private void showProgressDialog() {
+//        if (progressDialog == null) {
+//            progressDialog = new ProgressDialog(this);
+//            progressDialog.setMessage("正在加载...");
+//            progressDialog.setCanceledOnTouchOutside(false);
+//        }
+//        progressDialog.show();
+//    }
 
     /**
      * 关闭进度对话框
@@ -150,14 +150,14 @@ public class Covid19Activity extends BaseActivity{
         //一堆初始化
         setContentView(R.layout.activity_covid);
         covid_tv_city = findViewById(R.id.covid_tv_city);
-        bentuquezhen = findViewById(R.id.covid_index_tv_addY);
-        bentuwuzhengzhuang = findViewById(R.id.covid_index_tv_addN);
-        jingwaishuru = findViewById(R.id.covid_index_tv_addI);
-        siwangbingli = findViewById(R.id.covid_index_tv_addD);
-        gaofengxiandiqu = findViewById(R.id.covid_index_tv_H);
-        zhongfengxiandiqu = findViewById(R.id.covid_index_tv_M);
-        xianyouquezhen = findViewById(R.id.covid_index_tv_N);
-        leijiquezhen = findViewById(R.id.covid_index_tv_A);
+//        bentuquezhen = findViewById(R.id.covid_index_tv_addY);
+//        bentuwuzhengzhuang = findViewById(R.id.covid_index_tv_addN);
+//        jingwaishuru = findViewById(R.id.covid_index_tv_addI);
+//        siwangbingli = findViewById(R.id.covid_index_tv_addD);
+//        gaofengxiandiqu = findViewById(R.id.covid_index_tv_H);
+//        zhongfengxiandiqu = findViewById(R.id.covid_index_tv_M);
+//        xianyouquezhen = findViewById(R.id.covid_index_tv_N);
+//        leijiquezhen = findViewById(R.id.covid_index_tv_A);
         subao = findViewById(R.id.subao);
         //初始化完毕
         //下面的新闻列表，默认是一个空的列表
@@ -174,7 +174,7 @@ public class Covid19Activity extends BaseActivity{
         //设置Adapter，此时它列表为空，显示进度条
         subao.setAdapter(covid19NewsAdapter);
         //显示进度条
-        showProgressDialog();
+//        showProgressDialog();
         //可以一起执行，加快加载速度
         //获取上面八个数据
         getCityFromIp();
@@ -259,33 +259,35 @@ public class Covid19Activity extends BaseActivity{
                     //获取Today和Total的值
                     CovidBean.DataBean.Diseaseh5ShelfBean.AreaTreeBean.ChildrenBean.TodayBean todayBean = childrenBean.getToday();
                     CovidBean.DataBean.Diseaseh5ShelfBean.AreaTreeBean.ChildrenBean.TotalBean totalBean = childrenBean.getTotal();
-                    //本土确诊（增加的量）
-                    int bentu_quezhen = todayBean.getLocalConfirmAdd();
-                    //境外输入（增加的量）
-                    int jingwai_shuru = todayBean.getAbroadConfirmAdd();
-                    //死亡病例(增加的量）
-                    int siwang_bingli = todayBean.getDeadAdd();
-                    //本土无症状（增加的量）
-                    int bentu_wuzhengzhuang = todayBean.getWzzAdd();
-                    //高风险地区
-                    int gaofengxian_diqu = totalBean.getHighRiskAreaNum();
-                    //中风险地区
-                    int zhongfengxian_diqu = totalBean.getMediumRiskAreaNum();
-                    //现有确诊
-                    int xianyou_quezhen = totalBean.getNowConfirm();
-                    //累计确诊
-                    int leiji_quezhen = totalBean.getConfirm();
+//                    //本土确诊（增加的量）
+//                    int bentu_quezhen = todayBean.getLocalConfirmAdd();
+//                    //境外输入（增加的量）
+//                    int jingwai_shuru = todayBean.getAbroadConfirmAdd();
+//                    //死亡病例(增加的量）
+//                    int siwang_bingli = todayBean.getDeadAdd();
+//                    //本土无症状（增加的量）
+//                    int bentu_wuzhengzhuang = todayBean.getWzzAdd();
+//                    //高风险地区
+//                    int gaofengxian_diqu = totalBean.getHighRiskAreaNum();
+//                    //中风险地区
+//                    int zhongfengxian_diqu = totalBean.getMediumRiskAreaNum();
+//                    //现有确诊
+//                    int xianyou_quezhen = totalBean.getNowConfirm();
+//                    //累计确诊
+//                    int leiji_quezhen = totalBean.getConfirm();
                     //设置省名
                     covid_tv_city.setText(childrenBean.getName());
+
                     //设置本土确诊 由于是增加量，所以前面要带加号
-                    bentuquezhen.setText("+" + bentu_quezhen);
-                    jingwaishuru.setText("+" + jingwai_shuru);
-                    siwangbingli.setText("+" + siwang_bingli);
-                    bentuwuzhengzhuang.setText(String.valueOf(bentu_wuzhengzhuang));
-                    gaofengxiandiqu.setText(String.valueOf(gaofengxian_diqu));
-                    zhongfengxiandiqu.setText(String.valueOf(zhongfengxian_diqu));
-                    xianyouquezhen.setText(String.valueOf(xianyou_quezhen));
-                    leijiquezhen.setText(String.valueOf(leiji_quezhen));
+//                    bentuquezhen.setText("+" + bentu_quezhen);
+//                    jingwaishuru.setText("+" + jingwai_shuru);
+//                    siwangbingli.setText("+" + siwang_bingli);
+//                    bentuwuzhengzhuang.setText(String.valueOf(bentu_wuzhengzhuang));
+//                    gaofengxiandiqu.setText(String.valueOf(gaofengxian_diqu));
+//                    zhongfengxiandiqu.setText(String.valueOf(zhongfengxian_diqu));
+//                    xianyouquezhen.setText(String.valueOf(xianyou_quezhen));
+//                    leijiquezhen.setText(String.valueOf(leiji_quezhen));
+
                     Log.i("疫情","疫情数据加载完毕！");
                     closeProgressDialog();
                     //加载疫情速报
@@ -293,15 +295,8 @@ public class Covid19Activity extends BaseActivity{
                 }
             }
         }
-
-
     }
     @Override
     public void onError(Throwable ex, boolean isOnCallback){
-        Log.i("IP反查-疫情","请求疫情出现问题");
-        ex.printStackTrace();
-
     }
-
-
 }

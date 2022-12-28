@@ -40,7 +40,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         initView();
         mUserDBOpenHelper = new UserDBOpenHelper(this);     //实例化DBOpenhelper，进行登录验证的时候要用来进行数据查询
         mUserDBOpenHelper.add("001","2222");
-        mUserDBOpenHelper.add("南湖社区","12345");
 
         register = findViewById(R.id.register);
         register.setOnClickListener(new View.OnClickListener() {

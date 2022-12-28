@@ -14,17 +14,13 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.myapplication.city_manager.CityManagerActivity;
 import com.example.myapplication.city_manager.DeleteCityActivity;
 import com.example.myapplication.city_manager.SearchCityActivity;
 import com.example.myapplication.covid_19.Covid19Activity;
 import com.example.myapplication.db.DBManager;
-
 import java.util.Objects;
-
 
 public class words extends AppCompatActivity {
     private int bgNum;
